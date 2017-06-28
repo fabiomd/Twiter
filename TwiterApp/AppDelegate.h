@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  TwiterApp
+//  Twitter
 //
-//  Created by Fábio Moreira on 6/28/17.
+//  Created by Fábio Moreira on 6/12/17.
 //  Copyright © 2017 Fábio Moreira. All rights reserved.
 //
 

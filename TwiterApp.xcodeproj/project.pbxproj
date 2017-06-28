@@ -7,27 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		697B8C4241A7AC03BA0A8C72 /* Pods_TwiterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B01412F6FD3D4EA6D12C88B /* Pods_TwiterApp.framework */; };
+		E5708DA41F03ED1200E7D1D3 /* follow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5708DA31F03ED1200E7D1D3 /* follow@2x.png */; };
 		E5BD7E9D1F03E9780081BAC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7E9C1F03E9780081BAC9 /* main.m */; };
-		E5BD7EA01F03E9780081BAC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7E9F1F03E9780081BAC9 /* AppDelegate.m */; };
-		E5BD7EA31F03E9780081BAC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7EA21F03E9780081BAC9 /* ViewController.m */; };
-		E5BD7EA61F03E9780081BAC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BD7EA41F03E9780081BAC9 /* Main.storyboard */; };
 		E5BD7EA91F03E9780081BAC9 /* TwiterApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7EA71F03E9780081BAC9 /* TwiterApp.xcdatamodeld */; };
 		E5BD7EAB1F03E9780081BAC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5BD7EAA1F03E9780081BAC9 /* Assets.xcassets */; };
 		E5BD7EAE1F03E9780081BAC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BD7EAC1F03E9780081BAC9 /* LaunchScreen.storyboard */; };
+		E5BD7EE71F03EA630081BAC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7EE31F03EA630081BAC9 /* AppDelegate.m */; };
+		E5BD7EE81F03EA630081BAC9 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7EE51F03EA630081BAC9 /* Cell.m */; };
+		E5BD7EF31F03EA7A0081BAC9 /* Commom.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7EE91F03EA7A0081BAC9 /* Commom.m */; };
+		E5BD7EF41F03EA7A0081BAC9 /* compose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BD7EEA1F03EA7A0081BAC9 /* compose@2x.png */; };
+		E5BD7EF51F03EA7A0081BAC9 /* FollowCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7EEC1F03EA7A0081BAC9 /* FollowCollectionViewCell.m */; };
+		E5BD7EF61F03EA7A0081BAC9 /* FollowCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7EEE1F03EA7A0081BAC9 /* FollowCollectionViewController.m */; };
+		E5BD7EF71F03EA7A0081BAC9 /* goku.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BD7EEF1F03EA7A0081BAC9 /* goku.png */; };
+		E5BD7EF81F03EA7A0081BAC9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BD7EF01F03EA7A0081BAC9 /* Home.storyboard */; };
+		E5BD7EF91F03EA7A0081BAC9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7EF21F03EA7A0081BAC9 /* HomeViewController.m */; };
+		E5BD7F041F03EAB00081BAC9 /* TwiteImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7EFE1F03EAB00081BAC9 /* TwiteImageCollectionViewCell.m */; };
+		E5BD7F051F03EAB00081BAC9 /* TwitesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7F001F03EAB00081BAC9 /* TwitesCollectionViewCell.m */; };
+		E5BD7F061F03EAB00081BAC9 /* TwiteTextCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7F021F03EAB00081BAC9 /* TwiteTextCollectionViewCell.m */; };
+		E5BD7F0A1F03EAB90081BAC9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7F071F03EAB90081BAC9 /* User.m */; };
+		E5BD7F0B1F03EAB90081BAC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7F091F03EAB90081BAC9 /* ViewController.m */; };
+		E5BD7F0F1F03EAFC0081BAC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BD7F0E1F03EAFC0081BAC9 /* Main.storyboard */; };
+		E5BD7F141F03EB400081BAC9 /* profile_image@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5BD7F111F03EB400081BAC9 /* profile_image@2x.jpg */; };
+		E5BD7F151F03EB400081BAC9 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BD7F121F03EB400081BAC9 /* search@2x.png */; };
+		E5BD7F161F03EB400081BAC9 /* title_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5BD7F131F03EB400081BAC9 /* title_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B01412F6FD3D4EA6D12C88B /* Pods_TwiterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwiterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D2C206A1A95D8E179B335DA /* Pods-TwiterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiterApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwiterApp/Pods-TwiterApp.release.xcconfig"; sourceTree = "<group>"; };
+		2B6CBA4C5F9A03A9D4058F08 /* Pods-TwiterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwiterApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwiterApp/Pods-TwiterApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E5708DA31F03ED1200E7D1D3 /* follow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "follow@2x.png"; sourceTree = "<group>"; };
 		E5BD7E981F03E9780081BAC9 /* TwiterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwiterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BD7E9C1F03E9780081BAC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E5BD7E9E1F03E9780081BAC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E5BD7E9F1F03E9780081BAC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E5BD7EA11F03E9780081BAC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E5BD7EA21F03E9780081BAC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E5BD7EA51F03E9780081BAC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5BD7EA81F03E9780081BAC9 /* TwiterApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwiterApp.xcdatamodel; sourceTree = "<group>"; };
 		E5BD7EAA1F03E9780081BAC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5BD7EAD1F03E9780081BAC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5BD7EAF1F03E9780081BAC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5BD7EE21F03EA630081BAC9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5BD7EE31F03EA630081BAC9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5BD7EE41F03EA630081BAC9 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		E5BD7EE51F03EA630081BAC9 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		E5BD7EE61F03EA630081BAC9 /* Commom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commom.h; sourceTree = "<group>"; };
+		E5BD7EE91F03EA7A0081BAC9 /* Commom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Commom.m; sourceTree = "<group>"; };
+		E5BD7EEA1F03EA7A0081BAC9 /* compose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compose@2x.png"; sourceTree = "<group>"; };
+		E5BD7EEB1F03EA7A0081BAC9 /* FollowCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowCollectionViewCell.h; sourceTree = "<group>"; };
+		E5BD7EEC1F03EA7A0081BAC9 /* FollowCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowCollectionViewCell.m; sourceTree = "<group>"; };
+		E5BD7EED1F03EA7A0081BAC9 /* FollowCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowCollectionViewController.h; sourceTree = "<group>"; };
+		E5BD7EEE1F03EA7A0081BAC9 /* FollowCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowCollectionViewController.m; sourceTree = "<group>"; };
+		E5BD7EEF1F03EA7A0081BAC9 /* goku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goku.png; sourceTree = "<group>"; };
+		E5BD7EF01F03EA7A0081BAC9 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E5BD7EF11F03EA7A0081BAC9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E5BD7EF21F03EA7A0081BAC9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E5BD7EFD1F03EAB00081BAC9 /* TwiteImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwiteImageCollectionViewCell.h; sourceTree = "<group>"; };
+		E5BD7EFE1F03EAB00081BAC9 /* TwiteImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwiteImageCollectionViewCell.m; sourceTree = "<group>"; };
+		E5BD7EFF1F03EAB00081BAC9 /* TwitesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitesCollectionViewCell.h; sourceTree = "<group>"; };
+		E5BD7F001F03EAB00081BAC9 /* TwitesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitesCollectionViewCell.m; sourceTree = "<group>"; };
+		E5BD7F011F03EAB00081BAC9 /* TwiteTextCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwiteTextCollectionViewCell.h; sourceTree = "<group>"; };
+		E5BD7F021F03EAB00081BAC9 /* TwiteTextCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwiteTextCollectionViewCell.m; sourceTree = "<group>"; };
+		E5BD7F031F03EAB00081BAC9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E5BD7F071F03EAB90081BAC9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E5BD7F081F03EAB90081BAC9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E5BD7F091F03EAB90081BAC9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E5BD7F0E1F03EAFC0081BAC9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E5BD7F111F03EB400081BAC9 /* profile_image@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "profile_image@2x.jpg"; sourceTree = "<group>"; };
+		E5BD7F121F03EB400081BAC9 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		E5BD7F131F03EB400081BAC9 /* title_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +80,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				697B8C4241A7AC03BA0A8C72 /* Pods_TwiterApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CB55F32C0AADAF9D1DDA5B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B01412F6FD3D4EA6D12C88B /* Pods_TwiterApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E5BD7E8F1F03E9780081BAC9 = {
 			isa = PBXGroup;
 			children = (
 				E5BD7E9A1F03E9780081BAC9 /* TwiterApp */,
 				E5BD7E991F03E9780081BAC9 /* Products */,
+				FC96711E3494046AA6619ABC /* Pods */,
+				5CB55F32C0AADAF9D1DDA5B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +116,16 @@
 		E5BD7E9A1F03E9780081BAC9 /* TwiterApp */ = {
 			isa = PBXGroup;
 			children = (
-				E5BD7E9E1F03E9780081BAC9 /* AppDelegate.h */,
-				E5BD7E9F1F03E9780081BAC9 /* AppDelegate.m */,
-				E5BD7EA11F03E9780081BAC9 /* ViewController.h */,
-				E5BD7EA21F03E9780081BAC9 /* ViewController.m */,
-				E5BD7EA41F03E9780081BAC9 /* Main.storyboard */,
+				E5BD7F101F03EB0E0081BAC9 /* Storyboards */,
+				E5BD7F071F03EAB90081BAC9 /* User.m */,
+				E5BD7F031F03EAB00081BAC9 /* User.h */,
+				E5BD7EE91F03EA7A0081BAC9 /* Commom.m */,
+				E5BD7EFA1F03EA820081BAC9 /* Images */,
+				E5BD7EFB1F03EA900081BAC9 /* Cells */,
+				E5BD7EFC1F03EA9B0081BAC9 /* ViewControllers */,
+				E5BD7EE21F03EA630081BAC9 /* AppDelegate.h */,
+				E5BD7EE31F03EA630081BAC9 /* AppDelegate.m */,
+				E5BD7EE61F03EA630081BAC9 /* Commom.h */,
 				E5BD7EAA1F03E9780081BAC9 /* Assets.xcassets */,
 				E5BD7EAC1F03E9780081BAC9 /* LaunchScreen.storyboard */,
 				E5BD7EAF1F03E9780081BAC9 /* Info.plist */,
@@ -82,6 +143,67 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E5BD7EFA1F03EA820081BAC9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E5708DA31F03ED1200E7D1D3 /* follow@2x.png */,
+				E5BD7F111F03EB400081BAC9 /* profile_image@2x.jpg */,
+				E5BD7F121F03EB400081BAC9 /* search@2x.png */,
+				E5BD7F131F03EB400081BAC9 /* title_icon@2x.png */,
+				E5BD7EEA1F03EA7A0081BAC9 /* compose@2x.png */,
+				E5BD7EEF1F03EA7A0081BAC9 /* goku.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E5BD7EFB1F03EA900081BAC9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD7EFD1F03EAB00081BAC9 /* TwiteImageCollectionViewCell.h */,
+				E5BD7EFE1F03EAB00081BAC9 /* TwiteImageCollectionViewCell.m */,
+				E5BD7EFF1F03EAB00081BAC9 /* TwitesCollectionViewCell.h */,
+				E5BD7F001F03EAB00081BAC9 /* TwitesCollectionViewCell.m */,
+				E5BD7F011F03EAB00081BAC9 /* TwiteTextCollectionViewCell.h */,
+				E5BD7F021F03EAB00081BAC9 /* TwiteTextCollectionViewCell.m */,
+				E5BD7EEB1F03EA7A0081BAC9 /* FollowCollectionViewCell.h */,
+				E5BD7EEC1F03EA7A0081BAC9 /* FollowCollectionViewCell.m */,
+				E5BD7EE41F03EA630081BAC9 /* Cell.h */,
+				E5BD7EE51F03EA630081BAC9 /* Cell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E5BD7EFC1F03EA9B0081BAC9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD7F081F03EAB90081BAC9 /* ViewController.h */,
+				E5BD7F091F03EAB90081BAC9 /* ViewController.m */,
+				E5BD7EED1F03EA7A0081BAC9 /* FollowCollectionViewController.h */,
+				E5BD7EEE1F03EA7A0081BAC9 /* FollowCollectionViewController.m */,
+				E5BD7EF11F03EA7A0081BAC9 /* HomeViewController.h */,
+				E5BD7EF21F03EA7A0081BAC9 /* HomeViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E5BD7F101F03EB0E0081BAC9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD7F0E1F03EAFC0081BAC9 /* Main.storyboard */,
+				E5BD7EF01F03EA7A0081BAC9 /* Home.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FC96711E3494046AA6619ABC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B6CBA4C5F9A03A9D4058F08 /* Pods-TwiterApp.debug.xcconfig */,
+				1D2C206A1A95D8E179B335DA /* Pods-TwiterApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5BD7EB21F03E9780081BAC9 /* Build configuration list for PBXNativeTarget "TwiterApp" */;
 			buildPhases = (
+				4ECADFF8BF754F75F64D5B5B /* [CP] Check Pods Manifest.lock */,
 				E5BD7E941F03E9780081BAC9 /* Sources */,
 				E5BD7E951F03E9780081BAC9 /* Frameworks */,
 				E5BD7E961F03E9780081BAC9 /* Resources */,
+				710C07A316FEE79BBF0D3403 /* [CP] Embed Pods Frameworks */,
+				EBF2A4018199EAB8A25942EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,37 +266,93 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5BD7F151F03EB400081BAC9 /* search@2x.png in Resources */,
 				E5BD7EAE1F03E9780081BAC9 /* LaunchScreen.storyboard in Resources */,
+				E5BD7F161F03EB400081BAC9 /* title_icon@2x.png in Resources */,
+				E5BD7EF81F03EA7A0081BAC9 /* Home.storyboard in Resources */,
+				E5BD7EF71F03EA7A0081BAC9 /* goku.png in Resources */,
+				E5708DA41F03ED1200E7D1D3 /* follow@2x.png in Resources */,
+				E5BD7F0F1F03EAFC0081BAC9 /* Main.storyboard in Resources */,
+				E5BD7F141F03EB400081BAC9 /* profile_image@2x.jpg in Resources */,
+				E5BD7EF41F03EA7A0081BAC9 /* compose@2x.png in Resources */,
 				E5BD7EAB1F03E9780081BAC9 /* Assets.xcassets in Resources */,
-				E5BD7EA61F03E9780081BAC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4ECADFF8BF754F75F64D5B5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		710C07A316FEE79BBF0D3403 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwiterApp/Pods-TwiterApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF2A4018199EAB8A25942EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwiterApp/Pods-TwiterApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5BD7E941F03E9780081BAC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5BD7EA31F03E9780081BAC9 /* ViewController.m in Sources */,
-				E5BD7EA01F03E9780081BAC9 /* AppDelegate.m in Sources */,
 				E5BD7EA91F03E9780081BAC9 /* TwiterApp.xcdatamodeld in Sources */,
+				E5BD7EE81F03EA630081BAC9 /* Cell.m in Sources */,
+				E5BD7F061F03EAB00081BAC9 /* TwiteTextCollectionViewCell.m in Sources */,
 				E5BD7E9D1F03E9780081BAC9 /* main.m in Sources */,
+				E5BD7EF51F03EA7A0081BAC9 /* FollowCollectionViewCell.m in Sources */,
+				E5BD7F051F03EAB00081BAC9 /* TwitesCollectionViewCell.m in Sources */,
+				E5BD7F0B1F03EAB90081BAC9 /* ViewController.m in Sources */,
+				E5BD7EE71F03EA630081BAC9 /* AppDelegate.m in Sources */,
+				E5BD7EF61F03EA7A0081BAC9 /* FollowCollectionViewController.m in Sources */,
+				E5BD7F0A1F03EAB90081BAC9 /* User.m in Sources */,
+				E5BD7EF31F03EA7A0081BAC9 /* Commom.m in Sources */,
+				E5BD7EF91F03EA7A0081BAC9 /* HomeViewController.m in Sources */,
+				E5BD7F041F03EAB00081BAC9 /* TwiteImageCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E5BD7EA41F03E9780081BAC9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5BD7EA51F03E9780081BAC9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E5BD7EAC1F03E9780081BAC9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -275,6 +456,7 @@
 		};
 		E5BD7EB31F03E9780081BAC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B6CBA4C5F9A03A9D4058F08 /* Pods-TwiterApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SZSQ274898;
@@ -287,6 +469,7 @@
 		};
 		E5BD7EB41F03E9780081BAC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D2C206A1A95D8E179B335DA /* Pods-TwiterApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SZSQ274898;
@@ -316,6 +499,7 @@
 				E5BD7EB41F03E9780081BAC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

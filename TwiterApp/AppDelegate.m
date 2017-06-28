@@ -1,12 +1,15 @@
 //
 //  AppDelegate.m
-//  TwiterApp
+//  Twitter
 //
-//  Created by Fábio Moreira on 6/28/17.
+//  Created by Fábio Moreira on 6/12/17.
 //  Copyright © 2017 Fábio Moreira. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "FollowCollectionViewController.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+
+    [window makeKeyAndVisible];
+    
+//    ViewController *viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"viewController"];
+
+    HomeViewController * viewController = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateViewControllerWithIdentifier:@"homeViewController"];
+
+//    FollowCollectionViewController *viewController = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateViewControllerWithIdentifier:@"followCollectionViewController"];
+    
+    UINavigationController *navController = [[UINavigationController alloc] init];
+    [window setRootViewController: navController];
+    
+    dispatch_async(dispatch_get_main_queue(), ^(void){
+        [window.rootViewController presentViewController:viewController animated:YES completion:nil];
+    });
+
     return YES;
 }
 
@@ -58,7 +79,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"TwiterApp"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"Twitter"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.
