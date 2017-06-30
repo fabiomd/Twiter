@@ -26,7 +26,7 @@
 - (IBAction)followButtonWasPressed:(id)sender {
 }
 
-#pragma Condigurations
+#pragma Configure functions
 
 -(void)configureProfileImage{
     [_profileImage setImage:self.user.profileImage];

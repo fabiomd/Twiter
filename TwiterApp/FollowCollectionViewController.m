@@ -132,6 +132,8 @@ static NSString * const footerReuseIdentifier     = @"footterFollowCollectionVie
     return 0;
 }
 
+#pragma device transitionToSize
+
 - (void)viewWillTransitionToSize:(CGSize)size
        withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
     
@@ -158,13 +160,6 @@ static NSString * const footerReuseIdentifier     = @"footterFollowCollectionVie
         // If not needed, set to nil.
         
     }];
-    
-    NSArray<UICollectionReusableView*> * visibleCells = [self.collectionView visibleCells];
-    for(UICollectionReusableView * tempView in visibleCells){
-        if([tempView isKindOfClass:[TwitesCollectionViewCell class]]){
-            [((TwitesCollectionViewCell*)tempView).contentCollectionView.collectionViewLayout invalidateLayout];
-        }
-    }
 }
 
 
@@ -190,14 +185,10 @@ static NSString * const footerReuseIdentifier     = @"footterFollowCollectionVie
     
     switch (indexPath.section) {
         case followSection:{
-            CGSize aproximatedSize = CGSizeMake(self.collectionView.frame.size.width, 1000);
-            UIFont *textFont = [UIFont systemFontOfSize:14];
-            User * user = [self.users objectAtIndex:indexPath.item];
-            CGRect size = [user.bios boundingRectWithSize:aproximatedSize options: NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: textFont} context:nil];
-            return CGSizeMake(self.collectionView.frame.size.width , ceil(size.size.height) + 80);
+            return [self followSectionCellSize:indexPath];
         }
         case twitesSection:{
-            return CGSizeMake(self.collectionView.frame.size.width, 400);
+            return [self twitesSectionCellSize:indexPath];
         }
         default:
             return CGSizeZero;
@@ -216,6 +207,25 @@ static NSString * const footerReuseIdentifier     = @"footterFollowCollectionVie
         return CGSizeZero;
     }
     return CGSizeMake(self.collectionView.frame.size.width, 50);
+}
+
+#pragma Section Cells Size
+
+-(CGSize)followSectionCellSize:(NSIndexPath*)indexPath{
+    CGSize aproximatedSize = CGSizeMake(self.collectionView.frame.size.width, 1000);
+    UIFont *textFont = [UIFont systemFontOfSize:14];
+    User * user = [self.users objectAtIndex:indexPath.item];
+    CGRect size = [user.bios boundingRectWithSize:aproximatedSize options: NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: textFont} context:nil];
+    return CGSizeMake(self.collectionView.frame.size.width , ceil(size.size.height) + 80);
+}
+
+-(CGSize)twitesSectionCellSize:(NSIndexPath*)indexPath{
+    TwitesCollectionViewCell * twiteCell = (TwitesCollectionViewCell*)[self.collectionView cellForItemAtIndexPath:indexPath];
+    CGSize aproximatedSize = twiteCell.contentCollectionView.contentSize;
+    if(aproximatedSize.height == 0){
+        return CGSizeMake(self.collectionView.frame.size.width, 72);
+    }
+    return CGSizeMake(self.collectionView.frame.size.width, aproximatedSize.height);
 }
 
 #pragma mark <UICollectionViewDelegate>

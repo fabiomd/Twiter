@@ -23,6 +23,8 @@ static NSString * const twitesImageReuseIdentifier = @"twiteImageCellKind";
     [self configureContentCollectionView];
 }
 
+#pragma Configure functions
+
 -(void)configureProfileImage{
     [_profileImage setImage:self.user.profileImage];
     [_profileImage.layer setCornerRadius:5.0];
@@ -62,7 +64,6 @@ static NSString * const twitesImageReuseIdentifier = @"twiteImageCellKind";
     }else{
         TwiteImageCollectionViewCell * twiteImageCell = [collectionView dequeueReusableCellWithReuseIdentifier:twitesImageReuseIdentifier forIndexPath:indexPath];
         [twiteImageCell.imageView setImage:[UIImage imageNamed:@"goku.png"]];
-        [twiteImageCell.imageView setBackgroundColor:[UIColor yellowColor]];
         twiteImageCell.delegate = self;
         return twiteImageCell;
     }
